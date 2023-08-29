@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400&family=Nunito:wght@200;300;400&family=Pacifico&display=swap");
+
+:root {
+    /*primary colors*/
+    --orange: rgb(254, 161, 22);
+    --white: #f1f8ff;
+    --blue: #0f172b;
+    --blue2: #0f172bea;
+    --black: #141414;
+
+    /*fonts*/
+    --heebo: "Heebo", sans-serif;
+    --nunito: "Nunito", sans-serif;
+    --pacifico: "Pacifico", cursive;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+li {
+    list-style: none;
+}
+body {
+    font-family: var(--heebo);
+    background-color: var(--white);
+}
+/*--------------------------------HEADER--------------------------------*/
+.header {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header__title {
+    color: var(--orange);
+    font-size: xx-large;
+    font-family: var(--nunito);
+    font-weight: 700;
+    margin-left: 20px;
+}
+.navbar {
+    margin-right: 20px;
+    font-family: var(--heebo);
+    font-weight: 200;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.list-item {
+    transition: all 0.5s ease;
+    &:hover {
+        color: var(--orange);
+    }
+}
+.section_title {
+    font-family: var(--pacifico);
+    color: var(--orange);
+    font-weight: 600;
+    cursor: default;
+}
+.main-title {
+    font-family: var(--nunito);
+    font-weight: 600;
+    font-size: x-large;
+    cursor: default;
+}
+/*--------------------------------INICIO--------------------------------*/
+.inicio_desc {
+    text-align: center;
+    height: 75vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(../img/bg-banner.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inicio-container {
+    width: 70%;
+    color: #fff;
+}
+.desc_title {
+    font-family: var(--nunito);
+    font-size: 5rem;
+}
+.desc {
+    font-family: var(--heebo);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.inicio_card__container {
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.card {
+    background-color: #fff;
+    width: 25%;
+    border-radius: 20px;
+    padding: 40px;
+}
+.card-icon {
+    font-size: 3rem;
+}
+.inicio-card_title {
+    font-family: var(--nunito);
+    font-weight: 700;
+    font-size: large;
+}
+.inicio-card_desc {
+    font-weight: 300;
+    margin-top: 20px;
+}
+/*--------------------------------NOSOTROS--------------------------------*/
+.nosotros {
+    margin: 15px 0;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.img__container {
+    width: 50%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+}
+.img__item {
+    width: 300px;
+}
+.img__item img {
+    max-width: 100%;
+    height: 100%;
+}
+.img2 {
+    width: 200px;
+    height: 200px;
+    transform: translateY(50%);
+}
+.img3 {
+    width: 200px;
+    height: 200px;
+    transform: translateX(50%);
+}
+
+.nosotros_description {
+    padding: 20px 0;
+    width: 50%;
+    font-family: var(--heebo);
+    font-size: large;
+    font-weight: 200;
+}
+.nosotros_description > p {
+    padding: 20px 0;
+}
+/*--------------------------------MENU--------------------------------*/
+.menu {
+    text-align: center;
+    padding: 50px;
+}
+.card_container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.food_card {
+    width: 500px;
+    display: flex;
+    gap: 20px;
+}
+.food_card > img {
+    width: 100px;
+}
+.food_card__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: left;
+}
+.description_price {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--heebo);
+}
+.price {
+    color: var(--orange);
+    font-weight: 600;
+}
+
+/*--------------------------------FORMULARIO--------------------------------*/
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue);
+    color: #fff;
+}
+.form_img {
+    width: 50%;
+}
+.image {
+    height: 100%;
+    width: 100%;
+}
+.contact-form {
+    width: 50%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-weight: 100;
+    font-size: large;
+    color: var(--white);
+    font-family: var(--nunito);
+}
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.input_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+.input {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+input::placeholder,
+textarea::placeholder {
+    font-family: var(--heebo);
+    font-size: medium;
+    font-weight: 100;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: var(--heebo);
+    padding: 10px;
+    border-radius: 3px;
+    border: unset;
+    &:focus {
+        outline: 3px solid var(--orange);
+        color: var(--black);
+    }
+}
+input[type="submit"] {
+    padding: 10px 0;
+    background-color: var(--orange);
+    color: #fff;
+    border: unset;
+    border-radius: 5px;
+    font-family: var(--heebo);
+    font-weight: 400;
+    font-size: medium;
+    transition: all 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(223, 96, 50, 0.99);
+    }
+}
+textarea {
+    resize: none;
+}
+/*--------------------------------STAFF--------------------------------*/
+.equipo {
+    padding: 40px 0;
+    text-align: center;
+}
+.cheff_card_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+}
+.cheff_card {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    flex-grow: 1;
+}
+.cheff_card__title {
+    font-family: var(--nunito);
+    font-weight: 600;
+    font-size: larger;
+    cursor: default;
+}
+.cheff_card > img {
+    border-radius: 50%;
+    width: 200px;
+}
+/*--------------------------------FOOTER--------------------------------*/
+.footer {
+    padding: 20px 0;
+    background-color: var(--blue);
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--nunito);
+    font-size: small;
+    cursor: default;
+}
+.footer__title {
+    font-family: var(--pacifico);
+    font-size: large;
+    color: var(--orange);
+}
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: var(--white);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+}
+
+/*--------------------------------MEDIA FOR MOBILE--------------------------------*/
+@media (max-width: 700px) {
+    /*--------------------------------HEADER--------------------------------*/
+    .nav-list {
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-weight: 500;
+    }
+    .list-item {
+        color: var(--orange);
+        padding: 3.5rem 0;
+        display: block;
+        font-size: 1.5rem;
+    }
+    .nav-list > li {
+        width: 100vw;
+        text-align: center;
+    }
+    .hamburguer {
+        display: none;
+    }
+    .BTN {
+        position: fixed;
+        z-index: 999;
+        bottom: 2vh;
+        right: 2vw;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 30%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--orange);
+    }
+    .panel {
+        position: fixed;
+        z-index: 998;
+        background-color: var(--blue2);
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transform: translate(0, 100%);
+        transition: transform 0.4s ease;
+    }
+    .panel.is-active {
+        transform: translate(0, 0);
+    }
+    /*--------------------------------INICIO--------------------------------*/
+    .inicio-container {
+        width: auto;
+        padding: 15px;
+    }
+    .desc_title {
+        font-size: 3.2rem;
+    }
+    .desc {
+        font-size: 1rem;
+    }
+    .inicio_card__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: auto;
+    }
+    /*--------------------------------NOSOTROS--------------------------------*/
+    .nosotros {
+        padding: unset;
+        flex-direction: column;
+    }
+    .img__container {
+        width: auto;
+    }
+    .img__item,
+    .img2,
+    .img3 {
+        width: 100px;
+        height: 100px;
+    }
+    .img2,
+    .img3 {
+        transform: unset;
+    }
+    .nosotros_description {
+        width: auto;
+        padding: 20px 50px;
+    }
+    /*--------------------------------CONTACTO--------------------------------*/
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form_img {
+        display: none;
+    }
+    .contact-form {
+        width: auto;
+    }
+    /*--------------------------------STAFF--------------------------------*/
+    .cheff_card_container {
+        flex-direction: column;
+    }
+    .cheff_card {
+        width: 100%;
+    }
+
+    /*--------------------------------FOOTER--------------------------------*/
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info,
+    .contact,
+    .horarios,
+    .redes {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+}
