@@ -451,6 +451,7 @@ textarea {
     }
     .contact-form {
         width: auto;
+        padding: 30px;
     }
     /*--------------------------------STAFF--------------------------------*/
     .cheff_card_container {
