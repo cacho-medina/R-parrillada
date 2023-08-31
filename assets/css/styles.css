@@ -350,7 +350,7 @@ textarea {
 }
 
 /*--------------------------------MEDIA FOR MOBILE--------------------------------*/
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     /*--------------------------------HEADER--------------------------------*/
     .nav-list {
         height: 100%;
@@ -401,16 +401,19 @@ textarea {
     .panel.is-active {
         transform: translate(0, 0);
     }
+}
+
+@media (max-width: 800px) {
     /*--------------------------------INICIO--------------------------------*/
     .inicio-container {
         width: auto;
         padding: 15px;
     }
     .desc_title {
-        font-size: 3.2rem;
+        font-size: 3.1rem;
     }
     .desc {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .inicio_card__container {
         flex-direction: column;
